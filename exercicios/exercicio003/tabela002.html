@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+
+    <style>
+        main {
+            margin: auto;
+            width: 600px;
+            background-color: #eee;
+        }
+
+        table {
+            border: 1px solid black;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        .estados {
+            text-align: center;
+        }
+
+        .cidades {
+            font-style: italic;
+        }
+
+        span {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption>Sudeste x Sul</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Estados</th>
+                    <th>Cidades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4" class="estados">Sudeste</td>
+                    <td class="estados">São Paulo</td>
+                    <td class="cidades">
+                        <ul>
+                            <li>São Paulo</li>
+                            <li>Guarulhos</li>
+                            <li>Campinas</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="estados">Rio de Janeiro</td>
+                    <td class="cidades">
+                        <ol>
+                            <li>Rio de Janeiro</li>
+                            <li>São Gonçalo</li>
+                            <li>Duque de Caxias</li>
+                        </ol>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="estados">Minas Gerais</td>
+                    <td class="cidades">
+                        <ul type="circle">
+                            <li>Belo Horizonte</li>
+                            <li>Uberlândia</li>
+                            <li>Contagem</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="estados">Espirito Santo</td>
+                    <td>
+                        <ol type="I">
+                            <li><span>Vila Velha</span></li>
+                            <li><span>Serra</span></li>
+                            <li><span>Cariacica</span></li>
+                        </ol>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" class="estados">Sul</td>
+                    <td class="estados">Rio Grande do Sul</td>
+                    <td>
+                        <ol type="a">
+                            <li><span>Porto Alegre</span></li>
+                            <li><span>Caxias do Sul</span></li>
+                            <li><span>Pelotas</span></li>
+                        </ol>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="estados">Paraná</td>
+                    <td class="cidades">
+                        <ul>
+                            <li>Curitiba</li>
+                            <li>Londrina</li>
+                            <li>Maringá</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="estados">Santa Catarina</td>
+                    <td class="cidades">
+                        <ol type="1">
+                            <li>Joinvile</li>
+                            <li>Florianópolis</li>
+                            <li>Blumenau</li>
+                        </ol>
+                    </td>
+                </tr>
+              
+                <!--
+                <tr>
+                    <td rowspan="3" class="estados">Rio de Janeiro</td>
+                    <td style="border-top: 1px solid black" class="cidades">Rio de Janeiro</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">São Gonçalo</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Duque de Caxias</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" class="estados">Minas Gerais</td>
+                    <td style="border-top: 1px solid black" class="cidades">Belo Horizonte</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Uberlândia</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Contagem</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" class="estados">Espírito Santo</td>
+                    <td style="border-top: 1px solid black" class="cidades">Vila Velha</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Serra</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Cariacica</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="9">Sul</td>
+                    <td rowspan="3" class="estados">Rio Grande do Sul</td>
+                    <td style="border-top: 1px solid black" class="cidades">Porto Alegre</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Caxias do Sul</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Pelotas</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" class="estados">Paraná</td>
+                    <td style="border-top: 1px solid black" class="cidades">Curitiba</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Londrina</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Maringá</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" class="estados">Santa Catarina</td>
+                    <td style="border-top: 1px solid black" class="cidades">Joinvile</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Florianópolis</td>
+                </tr>
+
+                <tr>
+                    <td class="cidades">Blumenau</td>
+                </tr>
+                    -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
