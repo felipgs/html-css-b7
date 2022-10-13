@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Starbuzz</title>
+    <style>
+        main {
+            background-color: white;
+            width: 700px;
+            margin: auto;
+        }
+
+        main h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        main p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        div.container {
+            display: flex;
+            justify-content: center;
+           
+        }
+
+        table {
+            text-align: center;
+            font-weight: bold;
+            width: 400px;
+
+            margin: 10px;
+            padding: 10px;
+        }
+
+        td > img {
+            height: 150px;
+        }
+
+        td > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        td > a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Café Starbuzz</h1>
+
+        <p>Cardápio</p>
+
+        <div class="container">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img src="imagens/mistura.jpg" alt="café"></td>
+                        <td><img src="imagens/cafe.jpg" alt="café arábico"></td>
+                        <td><img src="imagens/cappucino.jpg" alt="cappucino"></td>
+                        <td><img src="imagens/cha.jpg" alt="chá"></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="paginas/mistura.html">Mistura da casa</a></td>
+                        <td><a href="paginas/cafe.html">Café arábico com leite</a></td>
+                        <td><a href="paginas/cappucino.html">Cappucino</a></td>
+                        <td><a href="paginas/cha.html">Chá Chai</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
