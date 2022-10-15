@@ -7,7 +7,7 @@ h1 {
 div.video {
     margin: auto;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 
 }
 
@@ -16,7 +16,7 @@ div.video-area {
     background-color: aqua;
     
     height: 0px;
-    padding: 0px 0px 58.25%;
+    padding: 0px 0px 56.25%;
 }
 
 div.video-area > iframe {
