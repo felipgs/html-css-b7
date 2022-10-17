@@ -70,16 +70,19 @@ section.banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
+    width: 320px;
     color: white;
 }
 
 .banner-texto h1 {
     font-size: 3em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.61);
 }
 
 .banner-texto p {
     font-size: 1.2em;
+    margin-top: 20px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.336);
 }
 
 .banner-blocos {
