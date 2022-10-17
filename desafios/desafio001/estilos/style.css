@@ -52,46 +52,49 @@ main {
 
 
 section.banner {
-    display: flex;
-    flex-direction: column;
-    
-
     background-image: url(../imagens/img1.jpg);
     background-size: cover;
     background-position: center top;
     height: 670px;
 }
 
-div.titulo-banner {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    width: 350px;
-}
-
-div.titulo-banner > h1 {
-    font-size: 3em;
-    color: white;
-    margin-bottom: 20px;
-}
-
-div.titulo-banner > p {
-    font-size: 1.1em;
-    color: white;
-}
-
-div.blocos-banner {
-    justify-self: center;
-
-    
-    display: flex;
-    width: 990px;
-    border: 1px solid black;
+section.titulo-banner {
     margin-left: 180px;
+    padding-top: 100px;
+    color: white;
+    width: 300px;
 }
 
-div.blocos {
+section.titulo-banner > h1 {
+    font-size: 3em;
+}
+
+section.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 423px;
+}
+
+.blocos-banner {
+    display: flex;
+    column-gap: 0px;
+}
+
+.blocos {
     width: 330px;
     height: 200px;
     border: 1px solid black;
 }
+
+.blocos > h3, .blocos > p {
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.blocos > button {
+    margin: 10px;
+    padding: 5px;
+}
+
