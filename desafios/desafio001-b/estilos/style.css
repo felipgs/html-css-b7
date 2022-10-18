@@ -75,7 +75,7 @@ section.banner {
 }
 
 .banner-texto h1 {
-    font-size: 3em;
+    font-size: 4em;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.61);
 }
 
@@ -86,6 +86,84 @@ section.banner {
 }
 
 .banner-blocos {
-    background-color: rgba(0, 255, 255, 0.397);
+    display: flex;
     height: 210px;
+}
+
+.bloco1, .bloco2, .bloco3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+
+}
+
+.bloco1 {
+    background-color: rgb(57, 170, 225);
+}
+.bloco2 {
+    background-color: rgb(0, 121, 199);
+}
+.bloco3 {
+    background-color: rgb(43, 76, 153);
+}
+
+.bloco1 h2, .bloco2 h2, .bloco3 h2 {
+    margin-bottom: 20px;
+}
+
+.bloco1 p, .bloco2 p {
+    line-height: 20px;
+}
+
+.banner-blocos  a {
+    font-size: 0.8em;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.bloco1 a:hover {
+    background-color: rgb(0, 121, 199);
+    font-weight: bold;
+}
+
+.bloco2 a:hover {
+    background-color: rgb(57, 170, 225);
+    font-weight: bold;
+}
+
+.horario1, .horario2, .horario3 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.233);
+}
+
+.horario2, .horario3 {
+    padding-top: 10px;
+}
+
+section.informacoes {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 600px;
+}
+
+.noticias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.novidades {
+    flex: 2;
+    background-color: chartreuse;
+}
+
+.departamentos {
+    flex: 1;
+    background-color: crimson;
 }
