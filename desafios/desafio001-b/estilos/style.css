@@ -146,24 +146,7 @@ section.banner {
     padding-top: 10px;
 }
 
-section.informacoes {
+section#geral {
     display: flex;
     justify-content: center;
-    background-color: white;
-    height: 600px;
-}
-
-.noticias {
-    display: flex;
-    justify-content: space-between;
-}
-
-.novidades {
-    flex: 2;
-    background-color: chartreuse;
-}
-
-.departamentos {
-    flex: 1;
-    background-color: crimson;
 }
