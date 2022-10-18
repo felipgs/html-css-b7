@@ -150,3 +150,55 @@ section#geral {
     display: flex;
     justify-content: center;
 }
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-title-text {
+    font-weight: bold;
+}
+
+.widget-title-bar {
+    width: 50px;
+    height: 2px;
+    background-color: rgb(57, 170, 225);
+    margin-top: 10px;
+}
+
+article .news-data {
+    display: flex;
+}
+
+article .news-posted-at {
+    font-size: 0.8em;
+    background-color: rgb(43, 76, 153);
+    color: white;
+    margin-right: 2px;
+    padding: 10px;
+}
+
+article .news-coments {
+    font-size: 0.8em;
+    background-color: rgb(57, 170, 225);
+    color: white;
+    padding: 10px;
+}
+
+article .news-thumbnail {
+    margin-top: 30px;
+}
+
+article .news-thumbnail img {
+    width: 100%;
+    height: auto;
+}
