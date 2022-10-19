@@ -153,6 +153,7 @@ section#geral {
 
 #geral section {
     flex: 2;
+    padding: 10px;
 }
 
 #geral aside {
@@ -242,7 +243,7 @@ article.aside-body {
 }
 
 article.aside-contact {
-    padding: 10px;
+    margin-right: 20px;
 }
 
 .contact-title, .contact-phone,
@@ -254,7 +255,7 @@ article.aside-contact {
 article.aside-contact span {
     vertical-align: text-bottom;
     padding: 5px;
-    background-color: #999;
+    background-color: rgb(57, 170, 225);
     color: white;
     border-radius: 4px;
 }
@@ -266,5 +267,211 @@ article.aside-contact span {
 
 .contact-email a:hover {
     text-decoration: underline;
-    color: black;
+    color: rgb(57, 170, 225);
+}
+
+.flexcolumn {
+    flex-direction: column;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.fm1, .fm2, .fm3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.fm1 {
+    background-color: rgb(57, 170, 225);
+}
+
+.fm2 {
+    background-color: rgb(0, 121, 199);
+}
+
+.fm3 {
+    background-color: rgb(43, 76, 153);
+}
+
+.fm1 p, .fm2 p, .fm3 p {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.fm1 a, .fm2 a, .fm3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.fm1 a:hover, .fm2 a:hover, .fm3 a:hover {
+    text-decoration: underline;
+}
+
+.footer-area {
+    display: flex;
+    
+}
+
+.footer-areaitem {
+    flex: 1;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+article.footer-post {
+    font-size: 0.9em;
+    color: rgb(70, 70, 70);
+}
+
+.footer-post p {
+    margin-bottom: 5px;
+}
+
+.footer-addrestitle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 300px;
+}
+
+.footer-addres a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social span {
+    margin-top: 10px;
+    padding: 4px;
+    background-color: rgb(49, 49, 49);
+    color: rgb(109, 109, 109);
+}
+
+.post-content{
+    margin-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.year {
+    color:rgb(0, 172, 228);
+}
+
+.footer-copy {
+    color: rgb(70, 70, 70);
+    border-top: 1px solid rgb(70, 70, 70);
+    height: 40px;
+    margin-top: 30px;
+    line-height: 39px;
+}
+
+.footer-copy span {
+    color:white
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: row;
+    }
+
+    .banner-texto {
+        padding: 20px;
+    }
+
+    .bloco1 p, .bloco2 p, .bloco3 p{
+        font-size: 0.8em;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .aside-contact {
+        font-size: 1em;
+    }
+
+    .aside-body {
+        max-width: 500px;
+    }
+
+    #geral section, #geral aside {
+        padding: 20px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-copy {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: row;
+    }
+
+    .banner-texto {
+        font-size: 0.8em;
+    }
+
+    .banner-blocos {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .widget-title {
+        margin-top: 60px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .aside-contact {
+        font-size: 1em;
+    }
+
+    .aside-body {
+        column-gap: 5px;
+        flex-wrap: nowrap;
+    }
+
+    #geral section, #geral aside {
+        padding: 20px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-copy {
+        text-align: center;
+    }
+
 }
