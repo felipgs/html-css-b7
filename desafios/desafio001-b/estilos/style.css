@@ -159,6 +159,7 @@ section#geral {
     flex: 1;
 }
 
+
 .widget-title {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -173,6 +174,17 @@ section#geral {
     height: 2px;
     background-color: rgb(57, 170, 225);
     margin-top: 10px;
+}
+
+.widget-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article.widget-post{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
 }
 
 article .news-data {
@@ -201,4 +213,58 @@ article .news-thumbnail {
 article .news-thumbnail img {
     width: 100%;
     height: auto;
+}
+
+article .news-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.3em;
+}
+
+article .news-resume {
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+article.aside-body {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    
+}
+
+.aside-box {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(57, 170, 225);
+}
+
+article.aside-contact {
+    padding: 10px;
+}
+
+.contact-title, .contact-phone,
+.contact-email, .contat-form {
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+article.aside-contact span {
+    vertical-align: text-bottom;
+    padding: 5px;
+    background-color: #999;
+    color: white;
+    border-radius: 4px;
+}
+
+.contact-email a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+    color: black;
 }
