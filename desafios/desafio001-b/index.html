@@ -16,6 +16,18 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector(".menu-mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == "flex") {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                }   else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+
     <title>MedCenter</title>
 </head>
 <body>
@@ -27,13 +39,20 @@
 
             <div class="menu">
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Páginas</a>
-                    <a href="#">Departamentos</a>
-                    <a href="#">Linha do tempo</a>
-                    <a href="#">Galeria</a>
-                    <a href="#">Contato</a>
+                    <div class="menu-mobile">
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Páginas</a></li>
+                        <li><a href="#">Departamentos</a></li>
+                        <li><a href="#">Linha do tempo</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -178,10 +197,10 @@
 
                 <aside>
                     <div class="widget">
-                        <div class="widget-title">
+                        <article class="widget-title">
                             <div class="widget-title-text">Departments</div>
                             <div class="widget-title-bar"></div>
-                        </div>
+                        </article>
 
                         <article class="aside-body">
 
