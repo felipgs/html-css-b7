@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: lightgray;
+    background-color: white;
 }
 
 h1 {
@@ -19,15 +19,17 @@ h1 {
     color: white;
 }
 
-main > h2 {
-    text-align: center;
-    margin-top: 20vh;
-    padding-bottom: 20px;
-}
-
 .topo {
     background-color: black;
     padding-bottom: 20px;
+}
+
+.topo p:before {
+    content: '\2729\00A0';
+}
+
+.topo span:before {
+    content: '\271E\00A0';
 }
 
 picture p {
@@ -87,75 +89,100 @@ section.imagem-fundo {
     background-size: cover;
     background-attachment: fixed;
     padding: 30vh;
+    box-shadow:  6px 6px 13px 0px black;
+}
+
+section > h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section.lista {
+    background-color: lightgray;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    padding: 20px 10px 20px 10px;
+    line-height: 20px;
+    word-wrap: break-word;
+    border-radius: 8px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.432);
+}
+
+ul {
+    margin-left: 30px;
+}
+
+ul > li#born {
+    list-style-type: '\2729\00A0';
+}
+
+ul > li#death {
+    list-style-type: '\271E\00A0';
+}
+
+div.imagem-fundo-2 {
+    background: url(../imagens/joey-jordison-01.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30vh;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    max-width: 800px;
     margin: auto;
-    width: 85vw;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    row-gap: 40px;
 }
 
-.timeline-e {
-    flex: 1;
+.galeria {
+    margin-top: 20vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
-.timeline-e h3 {
-    padding-bottom: 10px;
-    text-align: right;
+.galeria h2 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 100px;
 }
 
-.conteudo-e {
-    text-align: left;
-    padding: 20px;
+div.video {
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+div.video-area {
+    position: relative;
     background-color: black;
-    color: white;
+    height: 0px;
+    padding: 0px 0px 56.25%;
 }
 
-.container-conteudo-e {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    column-gap: 10px;
+div.video-area iframe {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
-.bar {
-    background-color: white;
-    height: 40px;
-    min-width: 3px;
-    border-radius: 6px;
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        margin: auto;
+        max-width: 350px;
+    }
 }
-
-.vazio {
-    height: 100px;
-}
-
-.vazio-1 {
-    height: 80px;
-}
-
-.timeline-d {
-    flex: 1;
-}
-
-.timeline-d h3 {
-    padding-bottom: 10px;
-    text-align: left;
-}
-
-.conteudo-d {
-    text-align: left;
-    padding: 20px;
-    background: black;
-    color: white;
-}
-
-.container-conteudo-d {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 10px;
-}
-
-
-
