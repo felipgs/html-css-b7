@@ -139,32 +139,38 @@ div.imagem-fundo-2 {
     box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
 }
 
+.galeria {
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+    padding: 60px 20px;
+    max-width: 800px;
+    background-color: lightgrey;
+    border-radius: 8px;
+}
+
+.galeria h2 {
+    text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
     max-width: 800px;
     margin: auto;
     padding-bottom: 40px;
+    padding-top: 60px;
+    border-radius: 8px;
     flex-wrap: wrap;
     row-gap: 40px;
-}
-
-.galeria {
-    margin-top: 20vh;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 60px;
-}
-
-.galeria h2 {
-    text-align: center;
-    margin-bottom: 15vh;
+    
 }
 
 div.video {
     margin: auto;
     max-width: 600px;
     width: 100%;
+    background-color: lightgray;
 }
 
 div.video-area {
