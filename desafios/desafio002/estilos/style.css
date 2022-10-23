@@ -88,7 +88,8 @@ section.imagem-fundo {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    height: 60vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     box-shadow:  6px 6px 13px 0px black;
 }
 
@@ -133,7 +134,8 @@ div.imagem-fundo-2 {
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
-    height: 60vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
 }
 
