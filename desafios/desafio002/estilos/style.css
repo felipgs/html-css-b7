@@ -93,7 +93,7 @@ section.imagem-fundo {
     box-shadow:  6px 6px 13px 0px black;
 }
 
-.lista-margem {
+.margem {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -194,7 +194,7 @@ footer {
     color: white;
     text-align: center;
     height: 60px;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 footer a {
