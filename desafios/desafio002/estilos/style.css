@@ -136,7 +136,7 @@ div.imagem-fundo-2 {
     background-attachment: fixed;
     padding-top: 20vh;
     padding-bottom: 20vh;
-    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    box-shadow: 6px 6px 13px 0px black
 }
 
 .galeria {
@@ -208,6 +208,18 @@ footer a:hover {
 
 
 @media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+   h2 {
+        font-size: 1.2em;
+   }
+
+   p, ul {
+    font-size: 0.9em;
+   }
     .container {
         flex-direction: column;
         align-items: center;
@@ -216,7 +228,12 @@ footer a:hover {
         max-width: 350px;
     }
 
+    .margem {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     footer {
-        font-size: 0.8em;
+        height: 80px;
     }
 }
