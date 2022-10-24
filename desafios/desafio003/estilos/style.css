@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Open+Sans:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --fonte-titulo: 'Open Sans', sans-serif;
+    --fonte-padrao: 'Asap', sans-serif;
+    --cor00: rgb(76, 154, 184);
+    --cor01: rgb(7, 118, 160);
+    --cor02: rgb(250, 152, 60);
+    --cor03: rgb(199,94,0);
+}
+
+body {
+    background: rgb(221, 218, 218);
+}
+
+main {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 60px;
+    font-family: var(--fonte-padrao);
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    max-height: 550px;
+    height: 550px;
+}
+
+div.login {
+    background-color: var(--cor00);
+    color: white;
+    line-height: 2em;
+    text-align: center;
+    max-width: 35vw;
+    width: 100%;
+    padding: 10px;
+    padding-top: 30vh;
+    border-radius: 20px 0px 0px 20px;
+}
+
+div.login h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+div.login p {
+    font-size: 1.2em;
+}
+
+button#signin {
+    background-color: var(--cor02);
+    color: white;
+    margin-top: 15px;
+    padding: 6px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+div.form {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    padding-top: 10vh;
+    border-radius: 0px 20px 20px 0px;
+}
+
+div.form h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor00);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+div.social img {
+    padding: 10px;
+}
+
+div.form p {
+    padding: 10px;
+    color: var(--cor00);
+    font-size: 1.2em;
+}
+
+
+
+div.name, div.mail, div.password {
+    display: flex;
+    background-color: rgba(221, 218, 218, 0.432);
+    margin: auto;
+    margin-bottom: 15px;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+div.name input, div.mail input, div.password input  {
+    font-family: var(--fonte-padrao);
+    background-color: transparent;
+    font-size: 1em;
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    width: 100%;
+}
+
+button.signup {
+    background-color: var(--cor02);
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--cor00);
+}
+
+button input {
+    font-family: var(--fonte-padrao);
+    color: white;
+    background-color: var(--cor02);
+    border: none;
+    font-size: 1.1em;
+}
