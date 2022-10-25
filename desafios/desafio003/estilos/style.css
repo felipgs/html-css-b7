@@ -100,8 +100,6 @@ div.form p {
     font-size: 1.2em;
 }
 
-
-
 div.name, div.mail, div.password {
     display: flex;
     background-color: rgba(221, 218, 218, 0.432);
