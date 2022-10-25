@@ -25,23 +25,22 @@ body {
 main {
     max-width: 90vw;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 48px;
+    margin-bottom: 49px;
     font-family: var(--fonte-padrao);
 }
 
 div.container {
     display: flex;
     justify-content: center;
-    max-height: 550px;
-    height: 550px;
 }
 
 div.login {
+    flex: 1;
     background-color: var(--cor00);
     color: white;
     line-height: 2em;
     text-align: center;
-    max-width: 35vw;
     width: 100%;
     padding: 10px;
     padding-top: 30vh;
@@ -75,6 +74,7 @@ button a {
 }
 
 div.form {
+    flex: 2;
     background-color: white;
     text-align: center;
     width: 100%;
@@ -91,7 +91,7 @@ div.form h1 {
 }
 
 div.social img {
-    padding: 10px;
+    padding: 5px;
 }
 
 div.form p {
@@ -123,18 +123,35 @@ div.name input, div.mail input, div.password input  {
 }
 
 button.signup {
-    background-color: var(--cor02);
+    background-color: var(--cor00);
     margin-top: 10px;
     width: 200px;
-    height: 40px;
-    border-radius: 20px;
+    height: 50px;
+    border-radius: 25px;
     border: 2px solid var(--cor00);
 }
 
 button input {
     font-family: var(--fonte-padrao);
     color: white;
-    background-color: var(--cor02);
+    background-color: var(--cor00);
     border: none;
     font-size: 1.1em;
 }
+
+footer {
+    background-color: white;
+    text-align: center;
+    color: var(--cor03);
+    padding: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor03);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+

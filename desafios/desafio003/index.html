@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/html.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -33,9 +34,20 @@
                 <h1>Create Account</h1>
 
                 <div class="social">
-                    <a href="#"><img src="imagens/fb-icon.png" alt="Logo Facebook"></a>
-                    <a href="#"><img src="imagens/google-plus-icon.png" alt="Logo Google+"></a>
-                    <a href="#"><img src="imagens/linkedin-icon.png" alt="Logo Linkedin"></a>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="imagens/social-facebook-icon-P.png" type="image/png">
+                        <img src="imagens/social-facebook-icon.png" alt="Logo Facebook">
+                    </picture>
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="imagens/social-google-plus-icon-P.png" type="image/png">
+                        <img src="imagens/social-google-plus-icon.png" alt="Logo Google+">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="imagens/social-linkedin-icon-P.png" type="image/png">
+                        <img src="imagens/social-linkedin-icon.png" alt="Logo Linkedin">
+                    </picture>
+                    
                 </div>
 
                 <p>
@@ -60,7 +72,7 @@
                     </div>
 
                     <button class="signup">
-                        <input type="submit" value="SIGN IN">
+                        <input type="submit" value="SIGN UP">
                     </button>
 
                 </form>
@@ -69,5 +81,10 @@
 
         </div>
     </main>
+    <footer>
+        <p>
+            Desenvolvido por <a href="https://github.com/felipgs" target="_blank">FelipeGS</a> 
+        </p>
+    </footer>
 </body>
 </html>
