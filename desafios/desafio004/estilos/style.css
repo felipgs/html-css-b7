@@ -15,3 +15,52 @@
     --cor04: rgb(80,80,80);
 }
 
+header {
+    background-color: rgb(23,23,23);
+    padding: 20px;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.box-menu {
+    border: 1px solid var(--cor02);
+    font-weight: bold;
+    color: var(--cor02);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 240px;
+    width: 100%;
+    max-height: 35px;
+}
+
+.box-menu div span {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.box-menu a {
+    color: var(--cor02);
+    text-decoration: none;
+}
+
+.box-menu a:hover {
+    color: var(--cor02);
+    text-decoration: 2px underline;
+    margin-bottom: 10px;
+}
+
+main {
+    background-color: var(--cor04);
+    height: 200px;
+}
+
+section.box-1 {
+    display: flex;
+}
