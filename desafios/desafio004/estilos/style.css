@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --cor00: rgb(12,124,16);
+    --cor01: rgb(5,75,22);
+    --cor02: rgb(155,240,11);
+    --cor03: rgb(139,216,10);
+    --cor04: rgb(80,80,80);
+}
+
