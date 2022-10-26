@@ -12,11 +12,11 @@
     --cor01: rgb(5,75,22);
     --cor02: rgb(155,240,11);
     --cor03: rgb(139,216,10);
-    --cor04: rgb(80,80,80);
+    --cor04: rgb(23,23,23);
 }
 
 header {
-    background-color: rgb(23,23,23);
+    background-color: black;
     padding: 20px;
 }
 
@@ -30,7 +30,6 @@ header {
 
 .box-menu {
     border: 1px solid var(--cor02);
-    font-weight: bold;
     color: var(--cor02);
     display: flex;
     justify-content: center;
@@ -40,27 +39,164 @@ header {
     max-height: 35px;
 }
 
-.box-menu div span {
+.box-menu div span, .box-menu-2 div span, .box-menu-3 div span {
     margin-top: 6px;
     font-weight: bold;
 }
 
 .box-menu a {
     color: var(--cor02);
+    font-weight: bold;
     text-decoration: none;
 }
 
 .box-menu a:hover {
     color: var(--cor02);
     text-decoration: 2px underline;
-    margin-bottom: 10px;
 }
 
 main {
-    background-color: var(--cor04);
-    height: 200px;
+    margin: auto;
 }
 
 section.box-1 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    max-width: 950px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+div.box-1-text {
+    max-width: 450px;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+div.box-1-text h1 {
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+div.box-1-text > p {
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+p#termos {
+    font-size: 1em;
+    padding-top: 20px;
+}
+
+p#termos a {
+    color: var(--cor01);
+}
+
+.box-menu-2 {
+    background-color: var(--cor02);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 360px;
+    max-height: 35px;
+}
+
+.box-menu-2:hover, .box-menu-3:hover {
+    background-color: var(--cor03);
+}
+
+.box-menu-2 a, .box-menu-3 a {
+    color: var(--cor01);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.box-menu-2 a:hover, .box-menu-3 a:hover {
+    text-decoration: 2px underline;
+}
+
+
+div.box-1-image {
+    padding: 20px;
+}
+
+section.box-vantagens {
+    background-color: var(--cor00);
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+section.box-vantagens h2 {
+    margin-top: 40px;
+    font-size: 2em;
+}
+section.box-vantagens h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+div.container-geral {
+    display: flex;
+    align-items: center;
+}
+
+div.container-vantagens {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+div.small-content {
+    max-width: 250px;
+}
+
+#gold {
+    width: 250px;
+}
+
+.container-eaplay {
+    margin: auto;
+}
+
+.container-eaplay p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 450px;
+    text-align: justify;
+}
+
+.box-menu-3 {
+    background-color: var(--cor02);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 220px;
+    max-height: 35px;
+}
+
+div.texto-final {
+    background-color: white;
+    color: var(--cor00);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+
+section.imagem-fundo {
+    background: url(../imagens/banner-jogos-m.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 82vh;
 }
