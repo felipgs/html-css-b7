@@ -22,6 +22,8 @@ header {
 
 .container-menu {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
     justify-content: space-between;
     align-items: center;
     max-width: 900px;
@@ -63,7 +65,7 @@ section.box-1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 30px;
+    column-gap: 10px;
     max-width: 950px;
     margin: auto;
     margin-top: 30px;
@@ -120,7 +122,7 @@ p#termos a {
 
 
 div.box-1-image {
-    padding: 20px;
+    padding: 10px;
 }
 
 section.box-vantagens {
@@ -137,23 +139,27 @@ section.box-vantagens h2 {
 }
 section.box-vantagens h3 {
     margin-top: 20px;
+    margin-bottom: 50px;
     font-size: 1.5em;
 }
 
 div.container-geral {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 div.container-vantagens {
     display: flex;
     justify-content: space-around;
-    column-gap: 20px;
+    column-gap: 50px;
     row-gap: 50px;
     flex-wrap: wrap;
     padding: 10px;
     margin-top: 40px;
-    max-width: 600px;
+    margin: auto;
+    max-width: 650px;
 }
 
 div.small-content {
@@ -166,6 +172,7 @@ div.small-content {
 
 .container-eaplay {
     margin: auto;
+    padding-top: 40px;
 }
 
 .container-eaplay p {
@@ -200,3 +207,4 @@ section.imagem-fundo {
     background-position: center center;
     height: 82vh;
 }
+

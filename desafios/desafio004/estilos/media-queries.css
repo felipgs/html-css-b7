@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    div.box-1-text {
+        max-width: 428px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width:768px) {
+
+    div.box-1-text {
+        max-width: 428px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    section.box-vantagens {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+
+    header div.container-menu {
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        padding-bottom: 10px;
+    }
+
+    div.box-1-text {
+        max-width: 428px;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    div.box-1-text h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    div.box-1-text p, div.box-1-text a {
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    p#termos {
+        font-size: 0.8em;
+    }
+
+    div.box-1-image img {
+        width: 300px;
+    }
+
+    section.box-vantagens {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    section.box-vantagens h2 {
+        font-size: 1.5em;
+    }
+
+    section.box-vantagens h3 {
+        font-size: 1.2em;
+    }
+
+    div.texto-final {
+        padding: 10px;
+    }
+
+    div.texto-final h2 {
+        font-size: 1.1em;
+    }
+
+    section.imagem-fundo {
+        background: url(../imagens/banner-jogos-m.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 60vh;
+    }
+}
