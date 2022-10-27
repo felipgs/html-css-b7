@@ -84,4 +84,9 @@
         background-position: center center;
         height: 60vh;
     }
+
+    footer {
+        font-size: 0.8em;
+        padding: 10px;
+    }
 }

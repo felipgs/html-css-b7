@@ -208,3 +208,22 @@ section.imagem-fundo {
     height: 82vh;
 }
 
+footer {
+    background-color: black;
+    color: var(--cor02);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--cor02);
+}
+
+footer a#pessoal {
+    text-decoration: none;
+}
+
+footer a#pessoal:hover {
+    text-decoration: underline;
+    color: var(--cor00);
+}
