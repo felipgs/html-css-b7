@@ -7,10 +7,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    width: 100vw;
-}
-
 header a {
     text-decoration: none;
     color: rgb(60 64 67);
@@ -64,14 +60,18 @@ div.login a:hover {
 }
 
 main {
-    width: 99vw;
     margin: auto;
-    margin-bottom: 50px;
 }
 
 div#logo {
     text-align: center;
     padding-top: 2vh;
+}
+
+form {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 380px;
 }
 
 div.container-pesquisa {
@@ -143,7 +143,7 @@ div.container-pesquisa-inferior {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    height: 200px;
+    
 }
 
 div.container-button {
@@ -167,3 +167,63 @@ div.button-search input:hover, div.button-luck input:hover {
     border: 1px solid rgb(223 225 229);
     box-shadow: 0px 1px rgb(223 225 229);
 }
+
+div.country {
+    background-color: rgb(242 242 242);
+    font-size: 0.9em;
+    color: rgb(112 117 122);
+    padding: 15px 30px;
+    border-bottom: 1px solid rgb(218 220 224);
+}
+
+footer div.container-footer {
+    background-color: rgb(242 242 242);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+footer div.container-footer-left {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+footer div.container-footer-right {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+footer div.container-footer-left a, footer div.container-footer-right a {
+    color: rgb(112 117 122);
+    text-decoration: none;
+}
+
+footer div.container-footer-left a:hover, footer div.container-footer-right a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+
+    footer div.container-footer {
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    div#pesquisa {
+        margin-top: 5px;
+    }
+
+}
+
