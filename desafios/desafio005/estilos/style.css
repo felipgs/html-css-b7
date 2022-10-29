@@ -13,7 +13,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: rgb(60 64 67);
     font-size: 0.8em;
 }
 
@@ -38,6 +38,7 @@ div#icon {
     width: 40px;
     height: 40px;
     border-radius: 20px;
+    color: grey;
 }
 
 div#app a:hover, div#icon:hover  {
@@ -63,8 +64,9 @@ div.login a:hover {
 }
 
 main {
-    width: 100vw;
+    width: 99vw;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 div#logo {
@@ -83,6 +85,10 @@ div.container-pesquisa {
     padding: 10px;
     height: 44px;
     max-width: 584px;
+}
+
+div.container-pesquisa:hover {
+    box-shadow: 1px 1px  rgb(223 225 229);
 }
 
 div.container-bloco {
@@ -126,4 +132,38 @@ div.container-app {
     display: flex;
     column-gap: 10px;
     padding-right: 10px;
+}
+
+div#keyboard, div#mic {
+    color: grey;
+}
+
+div.container-pesquisa-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 200px;
+}
+
+div.container-button {
+    display: flex;
+    column-gap: 10px;
+    height: 180px;
+}
+
+div.button-search input, div.button-luck input {
+    font-size: 0.9em;
+    background-color: rgb(248 249 250);
+    color: rgb(60 64 67);
+    padding: 9px 15px;
+    border-radius: 4px;
+    border: none;
+}
+
+div.button-search input:hover, div.button-luck input:hover {
+    background-color: rgb(248 249 250);
+    color: rgb(60 64 67);
+    border: 1px solid rgb(223 225 229);
+    box-shadow: 0px 1px rgb(223 225 229);
 }
