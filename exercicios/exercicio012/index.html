@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando primeira letra</title>
+    <style>
+        p::first-letter {
+            font-size: 1.5em;
+            color: crimson;
+        }
+
+        p::first-line {
+            background: lightgray;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+        }
+
+        div#first {
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        div#last {
+            border-radius: 0px 0px 8px 8px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur impedit voluptate dolor ratione, hic reiciendis praesentium iure ullam animi!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae eius eos mollitia rerum molestias voluptatum quidem. Quod fugit recusandae iure, dolorum asperiores reiciendis eaque voluptas sequi nesciunt facilis minus.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam veritatis aperiam voluptatem vero?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsam commodi omnis facere ut vel eos quisquam autem dolorum repellat molestiae, natus repellendus at ex recusandae, ratione, porro corrupti eveniet quidem blanditiis! Aliquid, dolore! Optio, vero qui pariatur dolorem recusandae voluptatibus asperiores.</p>
+
+    <br>
+
+    <div id="first"></div>
+    <div></div>
+    <div></div>
+    <div id="last"></div>
+    
+</body>
+</html>
