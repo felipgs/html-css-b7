@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 400px;
+}
+
+th, tr, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+caption {
+    padding-bottom: 10px;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: rgb(10, 93, 141);
+    color: white;
+}
+
+
