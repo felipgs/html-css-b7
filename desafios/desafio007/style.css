@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#caixa {
+    margin: auto;
+    background-color: rgb(20, 130, 220);
+    text-align: center;
+    margin-top: 50px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+a#botao {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+div#caixa:hover {
+    background-color: rgb(37, 157, 255);
+}
