@@ -23,4 +23,5 @@ a#botao {
 
 div#caixa:hover {
     background-color: rgb(37, 157, 255);
+    box-shadow: 2px 2px 6px rgb(176, 177, 180);
 }
