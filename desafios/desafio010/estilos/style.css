@@ -20,6 +20,15 @@
 
 }
 
+h1 {
+    font-family: var(--fonte-destque);
+    font-weight: normal;
+    color: var(--cor01);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 header {
     background-color: rgb(46, 11, 71);
     padding-top: 15px;
@@ -68,12 +77,12 @@ header nav.menu a:hover{
 
 main {
     margin: auto;
-    padding: 0px 15px;
 }
 
 main div.text-top {
     text-align: center;
     margin-top: 40px;
+    padding: 0px 15px;
 }
 
 div.text-top h1 {
@@ -108,6 +117,8 @@ main div.container-cards {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
     
 }
 
@@ -213,10 +224,17 @@ div.frame-5  {
 }
 
 section.quem-somos {
+    background-color: rgb(250, 250, 250);
     margin: auto;
     text-align: center;
-    padding-top: 60px;
+    margin-top: 80px;
+    padding: 0px 15px;
 }
+
+section div.logo-p img{
+    position: relative;
+    top: -30px;
+ }
 
 section.quem-somos h1 {
     font-family: var(--fonte-destque);
@@ -227,7 +245,7 @@ section.quem-somos h1 {
     margin-bottom: 10px;
 }
 
-section.quem-somos p {
+section.quem-somos > p {
     font-family: var(--fonte-padrao);
     text-align: justify;
     line-height: 25px;
@@ -239,14 +257,15 @@ section.quem-somos p {
 
 section div.container-quem-somos {
     display: flex;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 50px;
     max-width: 1150px;
     margin: auto;
 }
 
 div.marcelo, div.marta {
-    max-width: 560px;
+    flex: 1;
 }
 
 div.marcelo img, div.marta img {
@@ -259,6 +278,7 @@ div.marcelo img, div.marta img {
 }
 
 div.marcelo-text, div.marta-text {
+    background-color: white;
     padding: 20px;
     border: 1px solid var(--corborder);
     max-height: 700px;
@@ -266,9 +286,12 @@ div.marcelo-text, div.marta-text {
 }
 
 div.marcelo p, div.marta p {
+    font-family: var(--fonte-padrao);
+    color: var(--cortext);
     text-align: left;
     font-size: 0.9em;
-    font-family: var(--fonte-padrao);
+    line-height: 25px;
+    padding-top: 40px;
 }
 
 div.marcelo a, div.marta a {
@@ -280,3 +303,195 @@ div.marcelo a:hover, div.marta a:hover {
     color: var(--cortext);
 }
 
+div.container-quem-somos-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+    justify-content: center;
+    padding-top: 50px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+div.missao, div.visao, div.valores {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    text-align: left;
+    max-width: 400px;
+}
+
+div.missao h3, div.visao h3, div.valores h3 {
+    font-family: var(--fonte-destque);
+    font-weight: 400;
+    color: var(--cor01);
+    padding-bottom: 20px;
+}
+
+div.missao p, div.visao p, div.valores p {
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+    color: var(--cortext);
+    line-height: 25px;
+}
+
+article div.artigo {
+    margin: 50px 0px;
+}
+
+article div.container-artigo {
+    display: flex;
+    column-gap: 30px;
+    text-align: left;
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px 20px 40px 20px;
+}
+
+div.noticia {
+    flex: 2;
+    padding: 70px 30px 25px 30px;
+    background-color: rgb(250 250 250);
+    border: 1px solid rgb(223 221 225);
+    position: relative;
+}
+
+div.noticia::after {
+    content: '';
+    display: block;
+    background: url(../imagens/aspas-maiores.png) no-repeat;
+    width: 71px;
+    height: 57px;
+    position: absolute;
+    top: -25px;
+} 
+
+span.big-aspas::before{
+    content: '';
+    display: block;
+    background: url(../imagens/aspas-fundo.png) no-repeat;
+    width: 233px;
+    height: 191px;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+
+div.noticia h3, div.noticia-p h3 {
+    font-family: var(--fonte-destque);
+    font-weight: normal;
+    color: var(--cor01);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+div.noticia > p {
+    font-family: var(--fonte-padrao);
+    font-size: 0.9em;
+    color: var(--cortext);
+    padding-bottom: 10px;
+    position: relative;
+}
+
+div.noticia a, div.noticia-p a {
+    font-family: var(--fonte-padrao);
+    color: var(--cor01);
+    text-decoration: none;
+    font-size: 0.9em;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+div.noticia a:hover, div.noticia-p a:hover {
+    color: var(--cortext);
+}
+
+div.noticia-p {
+    flex: 1;
+}
+
+div.noticia-p > div::before {
+    content: '';
+    display: block;
+    background: url(../imagens/aspas-menores.png) no-repeat;
+    width: 71px;
+    height: 57px;
+    position: absolute;
+    top: -20px;
+    left: 25px;
+}
+
+div.noticia-p > div {
+    position: relative;
+    border: 1px solid var(--corborder);
+    background-color: rgb(250, 250, 250);
+    padding: 45px 15px 20px 45px;
+}
+
+
+div.noticia-p-box1 {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: var(--cor00);
+    color: rgb(250, 250, 250);
+}
+
+div.container-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.container-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    max-width: 1150px;
+    width: 100%;
+}
+
+div.container-geral > div {
+    flex: 1;
+    padding: 10px;
+}
+
+div.container-geral span {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+div.container-geral h3 {
+    font-family: var(--fonte-destque);
+    font-weight: 400;
+    line-height: 40px;
+}
+
+div.container-geral p, div.container-geral a {
+    font-family: var(--fonte-padrao);
+    font-size: 0.7em;
+}
+
+div.container-geral a {
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+div.container-geral a:hover {
+    color: var(--cortext);
+}
+
+
+div.footer-bottom p {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgb(67 36 90);
+}
