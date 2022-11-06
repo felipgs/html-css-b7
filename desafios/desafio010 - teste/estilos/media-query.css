@@ -1,2 +1,180 @@
 @charset "utf-8";
 
+@media screen and (max-width: 822px) {
+    menu a {
+        border-top: 2px solid var(--cor01);
+        margin-right: 0px;
+        border-bottom: none;
+    }
+
+    menu a:hover {
+        border-bottom: none;
+    }
+}
+
+@media screen and (min-width: 822px) {
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu ul li {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+    header div.container-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 10px;
+    }
+
+    header div.logo-principal {
+        margin: 0px;
+        padding-left: 10px;
+    }
+
+    header div.social-media {
+        flex-direction: column;
+        justify-content: space-around;
+        column-gap: 10px;
+        max-height: none;
+        padding: 10px;
+    }
+
+    div.text-top h1 {
+        font-size: 2em;
+    }
+
+    div.text-top p {
+        font-size: 0.9em;
+        line-height: 22px;
+    }
+
+    main div.container-cards {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    div.card-box {
+        height: auto;
+    }
+
+    div.card-conteudo {
+        padding: 10px;
+    }
+
+    div.card-text p {
+        line-height: 22px;
+        width: auto;
+        text-align: justify;
+    }
+
+    div.frame, div.frame-2, div.frame-3, div.frame-4, div.frame-5 {
+        height: 70px;
+        width: 70px;
+        top: -50px;
+        background-size: 46px;
+    }
+
+    section.quem-somos h1 {
+        font-size: 2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    section.quem-somos > p {
+        font-size: 0.9em;
+        text-align: justify;
+        line-height: 22px;
+        margin-top: 30px;
+    }
+
+    section div.container-quem-somos {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        padding-top: 50px;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    div.marcelo, div.marta {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        border: 1px solid var(--corborder);
+        padding-top: 10px;
+    }
+
+    div.marcelo img, div.marta img {
+        max-width: 250px;
+        margin-top: -30px;
+        margin: auto;
+    }
+
+    div.marcelo-text, div.marta-text {
+        padding: 20px;
+        border: none;
+    }
+
+    div.marcelo p, div.marta p {
+        font-size: 0.9em;
+        line-height: 23px;
+        padding-top: 0px;
+    }
+
+    div.missao h3, div.visao h3, div.valores h3 {
+        text-align: center;
+    }
+
+    div.missao p, div.visao p, div.valores p {
+        text-align: center;
+    }
+
+    div.artigo h1 {
+        font-size: 2em;
+    }
+
+    article div.container-artigo {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    div.noticia {
+        padding: 25px 30px;
+    }
+
+    span.big-aspas::before {
+        background: none;
+    }
+
+    div.noticia::after {
+        background: url(../imagens/aspas-menores.png) no-repeat;
+        top: -20px;
+    }
+
+    div.noticia-p > div {
+        padding: 25px 30px;
+    }
+
+    div#hide {
+        display: none;
+    }
+
+    div.container-geral {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+

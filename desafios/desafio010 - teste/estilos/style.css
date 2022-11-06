@@ -68,11 +68,11 @@ i#burguer {
 
 i#burguer:hover {
     color: var(--cortext);
-    
 }
 
 menu {
     display: none;
+    text-align: center;
 }
 
 menu > ul {
@@ -80,17 +80,19 @@ menu > ul {
 }
 
 menu a {
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
     display: block;
+    margin-right: 20px;
     padding: 5px;
     text-decoration: none;
-    text-align: center;
-    background-color: var(--cor00);
-    color: var(--cortext);
-    border-top: 2px solid var(--cor01);
+    color: white;
+    border-bottom: 2px solid transparent;
 }
 
 menu a:hover {
-    background-color: var(--cor01);
+    color: var(--cortext);
+    border-bottom: 2px solid var(--cortext);
 }
 
 main {
