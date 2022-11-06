@@ -39,8 +39,9 @@ header div.container-header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 120px;
+    margin-left: 200px;
     margin-right: 120px;
+    padding-bottom: 10px;
 }
 
 header div.logo-principal {
@@ -55,24 +56,43 @@ header div.social-media {
     padding: 2px;
 }
 
-header nav.menu {
-    text-align: center;
-    margin-top: 10px;
-    padding: 10px 0px;
-}
-
-header nav.menu a {
-    font-family: var(--fonte-padrao);
+i#burguer {
+    font-size: 30px;
+    background-color: var(--cor01);
     color: white;
-    font-size: 0.8em;
-    text-decoration: none;
-    margin: 0px 20px;
-    padding: 9px 0px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
 }
 
-header nav.menu a:hover{
-    border-bottom: 3px solid;
-    color: rgb(167, 169, 172);
+i#burguer:hover {
+    color: var(--cortext);
+}
+
+menu {
+    display: none;
+    text-align: center;
+}
+
+menu > ul {
+    list-style-type: none ;
+}
+
+menu a {
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+    display: block;
+    margin-right: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+menu a:hover {
+    color: var(--cortext);
+    border-bottom: 2px solid var(--cortext);
 }
 
 main {
