@@ -191,6 +191,7 @@
 
     div.marcelo, div.marta {
         border: 1px solid var(--corborder);
+        background-color: white;
     }
 
     div.marcelo-text{
