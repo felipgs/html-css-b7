@@ -16,9 +16,26 @@
     --cor01: rgb(178, 135, 86);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     height: 100px;
     background-color: black;
+}
+
+.button {
+    font-size: 0.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--cor01);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 60px;
 }
 
 .header {
@@ -118,19 +135,6 @@ header {
     margin-top: 10px;
 }
 
-.banner a {
-    font-size: 0.7em;
-    font-weight: 600;
-    text-transform: uppercase;
-    background-color: var(--cor01);
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin-top: 30px;
-    padding: 10px 30px;
-    border-radius: 60px;
-}
-
 .banner .sliders-pointers {
     display: flex;
     justify-content: center;
@@ -151,8 +155,72 @@ header {
     cursor: pointer;
 }
 
-.banner .pointer:hover {
+.banner .pointer.active {
     background-color: var(--cor01);
-    transition: 1s;
 }
 
+.default {
+    padding: 50px 0px;
+}
+
+.default .section-title, .default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 1.1em;
+}
+
+.default .section-desc {
+    color: var(--cor00);
+    font-size: 0.7em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.default.white {
+    background-color: rgb(250, 250, 250);
+}
+
+.default.white .section-title, .default.white .section-body {
+    color: black;
+}
+
+.default.black {
+    background-color: black;
+}
+
+.default.black .section-title, .default.black .section-body{
+    color: white;
+}
+
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 0.9em;
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 23px;
+}
+
+.section-aboutus--right {
+    width: 500px;
+    text-align: center;
+}
+.section-aboutus--right img {
+    width: 400px;
+    box-shadow: 0px 5px 10px var(--cor00);
+}
