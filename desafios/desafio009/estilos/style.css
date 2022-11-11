@@ -160,7 +160,7 @@ header {
 }
 
 .default {
-    padding: 50px 0px;
+    padding: 60px 0px;
 }
 
 .default .section-title, .default .section-desc {
@@ -174,8 +174,9 @@ header {
 }
 
 .default .section-desc {
-    color: var(--cor00);
+    font-weight: 400;
     font-size: 0.7em;
+    color: var(--cor00);
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -221,6 +222,78 @@ header {
     text-align: center;
 }
 .section-aboutus--right img {
-    width: 400px;
+    width: 450px;
     box-shadow: 0px 5px 10px var(--cor00);
 }
+
+.section-services {
+    display: flex;
+}
+
+.section-service:last-child {
+    border-right: 1px solid var(--cor00);
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-left: 1px solid var(--cor00);
+}
+
+.section-service h3 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 0px 30px;
+}
+
+.section-service p {
+    font-weight: 600;
+    color: var(--cor00);
+    font-size: 0.7em;
+    padding: 10px 12px;
+}
+
+.section-projects {
+    display: flex;
+    justify-content: center;
+}
+
+.section-projects--filters {
+    display: flex;
+    border: 1px solid var(--cor00);
+    background-color: rgb(230, 230, 230);
+    padding: 0px 30px;
+    border-radius: 30px;
+}
+
+.section-projects--box:last-child {
+    border-right: none;
+}
+
+.section-projects--box {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding: 0px 15px;
+    padding-top: 4px;
+    border-right: 1px solid var(--cor00);
+}
+
+.section-projects--box > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid transparent;
+    height: 46px;
+}
+
+.section-projects--box > a:hover, .section-projects--box .active  {
+    border-bottom: 4px solid var(--cor01)
+}
+
+
