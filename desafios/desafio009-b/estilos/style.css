@@ -445,3 +445,105 @@ header {
 .slide-area--social a:hover {
     background-color: var(--cor01);
 }
+
+.section-review {
+    text-align: center;
+}
+
+.review-area--name {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.client-area--job {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 6px;
+    margin-bottom: 30px;
+}
+
+.client-area--depoiment {
+    font-size: 1em;
+    line-height: 30px;
+    color: var(--cor00);
+    width: 900px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.section-awards {
+    height: auto;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.section-awards--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-awards--frame {
+    padding: 40px;
+}
+
+.default.white.price {
+    border-bottom: 1px solid lightgrey;
+}
+
+.section-price--container {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-price--product {
+    background-color: white;
+    text-align: center;
+    min-height: 300px;
+    min-width: 250px;
+    padding: 25px;
+    border-radius: 3px;
+}
+
+.section-price--name {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section-price--value {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.section-price--month {
+    color: var(--cor00);
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.section-price--info {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.bar {
+    margin: auto;
+    height: 0.1px;
+    width: 10px;
+    background-color: var(--cor00)
+}
+
+.button.dark {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.button.active, .button.dark:hover {
+    background-color: var(--cor01);
+}
+
