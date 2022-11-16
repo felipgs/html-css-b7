@@ -34,8 +34,8 @@ header {
     text-decoration: none;
     display: inline-block;
     margin-top: 30px;
-    padding: 10px 30px;
-    border-radius: 60px;
+    padding: 15px 50px;
+    border-radius: 30px;
 }
 
 .header {
@@ -546,4 +546,137 @@ header {
 .button.active, .button.dark:hover {
     background-color: var(--cor01);
 }
+
+.section-premium--container {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    padding: 30px 0px;
+    border-bottom: 1px solid var(--cor00);
+}
+
+.features-container {
+    display: flex;
+    column-gap: 30px;
+}
+
+.features-container h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-premium--description {
+    font-size: 0.9em;
+    color: var(--cor00);
+    line-height: 25px;
+    margin-left: 64px;
+}
+
+.description {
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 10px;
+    margin-left: 64px;
+}
+
+.description p {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--cor00);
+}
+
+.bar-2 {
+    height: 0.1px;
+    width: 10px;
+    background-color: var(--cor00)
+}
+
+.section-premium--second, .section-premium--third {
+    margin-top: 30px;
+}
+
+.section-body--button{
+    text-align: center;
+}
+
+.facts {
+    border: none;
+}
+
+.facts h2 {
+    font-size: 3em;
+    color: var(--cor01);
+}
+
+.facts .bar {
+    width: 20px;
+    height: 3px;
+}
+
+.facts h3 {
+    margin-top: 10px;
+}
+
+.section-service--info {
+    margin-top: 22px;
+}
+
+.section-tellaboutus--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    max-width: 1140px;
+    padding: 20px;
+    margin: auto;
+}
+
+.section-tellaboutus--share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    text-transform: uppercase;
+    color: var(--cor00);
+}
+
+.section-tellaboutus--social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-tellaboutus--social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+}
+
+.section-tellaboutus--social.t a {
+    background-color: rgb(0, 172, 237);
+}
+.section-tellaboutus--social.l a {
+    background-color: rgb(10, 102, 194);
+}
+.section-tellaboutus--social.f a {
+    background-color: rgb(51, 82, 145);
+}
+.section-tellaboutus--social.g a {
+    background-color: rgb(213, 76, 63);
+}
+.section-tellaboutus--social.p a {
+    background-color: rgb(198, 32, 38);
+}
+
+.section-tellaboutus--social p {
+    font-size: 0.6em;
+    font-weight: 600;
+    color: var(--cor00);
+    padding-left: 5px;
+}
+
 
