@@ -72,6 +72,8 @@ header {
 }
 
 .menu li a {
+    font-size: 0.9em;
+    font-weight: 600;
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -641,6 +643,13 @@ header {
     color: var(--cor00);
 }
 
+.section-tellaboutus--containersocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
 .section-tellaboutus--social {
     display: flex;
     justify-content: center;
@@ -679,4 +688,46 @@ header {
     padding-left: 5px;
 }
 
+.contact {
+    border-top: 1px solid var(--cor00);
+}
+
+.section-body--contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form input, form textarea {
+    outline: none;
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--cor00);
+}
+
+.section-body--input-1 input:first-child{
+    margin-right: 30px;
+}
+
+.section-body--input-1 input {
+    width: 260px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.section-body--input-2 input, .section-body--input-3 input, .section-body--input-3 textarea {
+    width: 100%;
+}
+
+.section-body--input-3 textarea {
+    margin-top: 30px;
+    resize: none;
+}
+
+.button.input {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
 

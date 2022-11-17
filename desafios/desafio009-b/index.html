@@ -631,25 +631,53 @@
                     <img src="imagens/share.png">
                     <p>Tell about us:</p>
                 </div>
-                <div class="section-tellaboutus--social t">
-                    <a href="#"><img src="imagens/twitter.png"></a>
-                    <p>152</p>
+                <div class="section-tellaboutus--containersocial">
+                    <div class="section-tellaboutus--social t">
+                        <a href="#"><img src="imagens/twitter.png"></a>
+                        <p>152</p>
+                    </div>
+                    <div class="section-tellaboutus--social l">
+                        <a href="#"><img src="imagens/linkedin.png"></a>
+                        <p>31</p>
+                    </div>
+                    <div class="section-tellaboutus--social f">
+                        <a href="#"><img src="imagens/facebook.png"></a>
+                        <p>165</p>
+                    </div>
+                    <div class="section-tellaboutus--social g">
+                        <a href="#"><img src="imagens/googleplus.png"></a>
+                        <p>22</p>
+                    </div>
+                    <div class="section-tellaboutus--social p">
+                        <a href="#"><img src="imagens/pinterest.png"></a>
+                        <p>165</p>
+                    </div>
                 </div>
-                <div class="section-tellaboutus--social l">
-                    <a href="#"><img src="imagens/linkedin.png"></a>
-                    <p>31</p>
-                </div>
-                <div class="section-tellaboutus--social f">
-                    <a href="#"><img src="imagens/facebook.png"></a>
-                    <p>165</p>
-                </div>
-                <div class="section-tellaboutus--social g">
-                    <a href="#"><img src="imagens/googleplus.png"></a>
-                    <p>22</p>
-                </div>
-                <div class="section-tellaboutus--social p">
-                    <a href="#"><img src="imagens/pinterest.png"></a>
-                    <p>165</p>
+            </div>
+        </section>
+
+        <section class="default white contact">
+            <div class="section-title">
+                <h2>Contact us</h2>
+            </div>
+            <div class="section-desc">
+                <h3>Our agency located in Melbourne, Australia</h3>
+            </div>
+            <div class="section-body">
+                <div class="section-body--contact">
+                    <form action="cadastro.php" autocomplete="on">
+                        <div class="section-body--input-1">
+                            <input type="text" name="name" id="iname" placeholder="NAME" minlength="3" required autocomplete="name">
+                            <input type="text" name="email" id="iemail" placeholder="EMAIL" required autocomplete="email">
+                        </div>
+                        <div class="section-body--input-2">
+                            <input type="text" name="subject" id="isubject" placeholder="SUBJECT" required >
+                        </div>
+                        <div class="section-body--input-3">
+                            <textarea name="message" id="imessage" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+                        </div>
+                        <input class="button input" type="submit" value="Send Message">
+                    </form>
                 </div>
             </div>
         </section>
