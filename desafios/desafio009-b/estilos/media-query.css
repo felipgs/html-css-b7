@@ -1,41 +1,12 @@
 @charset "utf-8";
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    .section-projects--filters {
+@media screen and (width: 1024px) {
+    .menu li a {
         font-size: 0.8em;
-        padding: 0px 10px;
-        max-width: 460px;
     }
-
-    .section-projects--box {
-        padding: 0px 10px;
-        height: 46px;
-    }
-
-    .section-review{
-        padding: 20px;
-    }
-
-    .section-awards--frame.displaynone {
-        display: none;
-    }
-
-    .section-body--contact form {
-        width: 350px;
-    }
-
-    .section-body--input-1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section-body--input-1 input {
-        width: 100%;
-    }
-
 }
 
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 350px) and (max-width: 992px) {
     .logo {
         margin-left: 30px;
     }
@@ -47,6 +18,7 @@
     }
 
     nav {
+        display: none;
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.8);
@@ -141,8 +113,146 @@
         flex-direction: column-reverse;
         row-gap: 30px;
     }
-
-
-
-
 }   
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .section-projects--filters {
+        font-size: 0.8em;
+        padding: 0px 10px;
+        max-width: 460px;
+    }
+
+    .section-projects--box {
+        padding: 0px 10px;
+        height: 46px;
+    }
+
+    .section-review{
+        padding: 20px;
+    }
+
+    .section-awards--frame.displaynone {
+        display: none;
+    }
+
+    .section-body--contact form {
+        width: 350px;
+    }
+
+    .section-body--input-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-body--input-1 input {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .menu ul li a {
+        font-size: 0.8em;
+        height: 40px;
+        margin-left: 30px;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner h2 {
+        font-size: 1em;
+    }
+
+    .section-aboutus--right img {
+        width: 100%;
+    }
+
+    .section-services {
+        flex-direction: column;
+    }
+
+    .section-projects {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .section-projects--filters {
+        font-size: 0.7em;
+        padding: 0px;
+        width: auto;
+    }
+
+    .section-projects--box {
+        padding: 0px 4px;
+        height: 46px;
+    }
+
+    .section-projects--photo {
+        width: 320px;
+    }
+
+    .section-projects--photo {
+        width: 300px;
+        height: auto;
+    }
+
+    .section-team {
+        max-width: 280px;
+    }
+
+    .displaynone-2, .displaynone {
+        display: none;
+    }
+
+    .section-premium--image img {
+        max-width: 300px;
+    }
+
+    .features-container h3 {
+        font-size: 1.1em;
+    }
+
+    .features-container img {
+        width: 30px;
+        height: auto;
+    }
+    
+    .section-tellaboutus--container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .section-tellaboutus--containersocial {
+        column-gap: 10px;
+    }
+
+    .section-tellaboutus--social {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .section-body--contact form {
+        width: 300px;
+    }
+
+    .section-body--input-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-body--input-1 input {
+        width: 100%;
+    }
+
+    .section-map {
+        padding: 0;
+        padding-bottom: 250px;
+    }
+
+    .section-map--info {
+        width: 100%;
+    }
+
+}

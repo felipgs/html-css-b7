@@ -710,7 +710,6 @@ header {
 }
 
 form input, form textarea {
-    text-transform: uppercase;
     outline: none;
     border: none;
     padding-bottom: 10px;
