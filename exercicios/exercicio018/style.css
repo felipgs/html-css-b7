@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: lightgrey;
+    max-width: 1200px;
+    justify-content: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: minmax(50px, 100px);
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.item {
+    font-size: 1.5em;
+    color: white;
+    background-color: crimson;
+    padding: 20px;
+    border-radius: 5px;
+}
