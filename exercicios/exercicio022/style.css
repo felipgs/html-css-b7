@@ -10,17 +10,18 @@ h1 {
     display: grid;
     gap: 10px;
     margin: auto;
+    margin-bottom: 50px;
     padding: 10px;
     text-align: center;
     grid-template-areas: 
         "item1 item2"
         "item3 item2"
-        "item4 item2"
+        "item4 item4"
     ;
 }
 
 .item {
-    font-size: 1.5em;
+    font-size: 1em;
     color: white;
     background-color: crimson;
     padding: 20px;
@@ -42,3 +43,48 @@ h1 {
 .item4 {
     grid-area: item4;
 }
+
+/* CSS do segundo grid abaixo*/
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: menu;
+}
+
+section {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+ad {
+    grid-area: ad;
+
+}
+
+.container.second {
+    grid-template-areas: 
+        "header header header header "
+        "menu  content content content"
+        "ad  content content content"
+        "footer footer footer footer "
+    ;
+}
+
+@media (max-width: 768px) {
+    .container.second {
+        grid-template-areas: 
+        "header"
+        "menu"
+        "content"
+        "ad"
+        "footer"
+        ;
+    }
+}
+
