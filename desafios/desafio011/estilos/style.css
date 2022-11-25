@@ -1,7 +1,45 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --texto-destaque: "oswald", sans-serif;
+
+    --cor00: rgb(17,112,80);
+}
+
+header .line {
+    background-color: var(--cor00);
+    height: 10px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-left img {
+    width: 64px;
+    height: 64px;
+}
+
+.header--search input {
+    font-size: 0.8em;
+    padding: 7px 10px;
+    border: 1px solid rgb(153, 153, 153);
+    outline: none;
 }
