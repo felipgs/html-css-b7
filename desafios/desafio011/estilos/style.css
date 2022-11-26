@@ -15,14 +15,35 @@
     --cor00: rgb(17,112,80);
 }
 
-header .line {
-    background-color: var(--cor00);
-    height: 10px;
+p {
+    color:rgb(69 69 69);
 }
 
 .container {
     width: 1140px;
     margin: auto;
+}
+
+.bar {
+    background-color: var(--cor00);
+    width: 168px;
+    height: 22px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(69 69 69);
+    padding: 10px 35px;
+    border: 2px solid rgb(69 69 69);
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+header .line {
+    background-color: var(--cor00);
+    height: 10px;
 }
 
 .header--area {
@@ -37,9 +58,110 @@ header .line {
     height: 64px;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.header--search form {
+    display: flex;
+}
+
 .header--search input {
     font-size: 0.8em;
-    padding: 7px 10px;
+    padding: 8px 10px;
     border: 1px solid rgb(153, 153, 153);
     outline: none;
+    width: 100%;
+    min-width: 260px;
+}
+
+.header--search button {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    margin-left: -30px;
+}
+
+.header--search img {
+    width: 16px;
+    height: 16px;
+}
+
+.header--menu img {
+    width: 24px;
+    height: 24px;
+}
+
+section.banner {
+    background: url(../imagens/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 90px 0px;
+}
+
+.container h1{
+    font-family: var(--texto-destaque);
+    font-weight: bold;
+    font-size: 6em;
+    line-height: 100px;
+    margin-bottom: 50px;
+}
+
+.banner--images {
+    display: flex;
+    column-gap: 40px;
+    margin-top: 60px;
+}
+
+.banner--images img {
+    width: 148px;
+    height: 148px;
+    border: 6px solid var(--cor00);
+    border-radius: 50%;
+}
+
+section.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area1--content {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 70px 100px;
+}
+
+.area1--content h2 {
+    font-family: var(--texto-destaque);
+    font-size: 2.2em;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.area1--content p {
+    margin-bottom: 30px;
+}
+
+.area1--content .button:hover {
+    background-color: rgb(69 69 69);
+    color: white;
+}
+
+.area1--image1 {
+    background: url(../imagens/f2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 350px;
+}
+
+.area1--image2 {
+    background: url(../imagens/f1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3 ;
 }
