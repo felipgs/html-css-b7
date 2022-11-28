@@ -41,6 +41,11 @@ p {
     margin-top: 20px;
 }
 
+.button:hover {
+    background-color: rgb(69 69 69);
+    color: white;
+}
+
 header .line {
     background-color: var(--cor00);
     height: 10px;
@@ -122,7 +127,7 @@ section.banner {
     border-radius: 50%;
 }
 
-section.area1 {
+section.area1, .area2, .area3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -133,20 +138,19 @@ section.area1 {
     padding: 70px 100px;
 }
 
-.area1--content h2 {
+.area1--content h2, .area2--content h2, .area3--content h2 {
     font-family: var(--texto-destaque);
     font-size: 2.2em;
     line-height: 40px;
     margin-bottom: 20px;
 }
 
-.area1--content p {
+.area1--content p, .area2--content p, .area3--content p {
     margin-bottom: 30px;
 }
 
-.area1--content .button:hover {
-    background-color: rgb(69 69 69);
-    color: white;
+.area1--text, .area2--text, .area3-text {
+    line-height: 1.6em;
 }
 
 .area1--image1 {
@@ -165,3 +169,37 @@ section.area1 {
     grid-column: 2 / 3;
     grid-row: 1 / 3 ;
 }
+
+.area2--content {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 70px 100px;
+}
+
+.area2--image1 {
+    background: url(../imagens/f4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: 450px;
+}
+
+.area2--image2 {
+    background: url(../imagens/f3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3 ;
+}
+
+
+
+.area3--image1 {
+    background: url(../imagens/f5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
