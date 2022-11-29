@@ -20,7 +20,7 @@ p {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -46,6 +46,10 @@ p {
     color: white;
 }
 
+header {
+    width: auto;
+}
+
 header .line {
     background-color: var(--cor00);
     height: 10px;
@@ -56,6 +60,7 @@ header .line {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    
 }
 
 .header-left img {
@@ -78,8 +83,7 @@ header .line {
     padding: 8px 10px;
     border: 1px solid rgb(153, 153, 153);
     outline: none;
-    width: 100%;
-    min-width: 260px;
+    min-width: 250px;
 }
 
 .header--search button {
@@ -87,6 +91,7 @@ header .line {
     border: none;
     padding: 5px;
     margin-left: -30px;
+    cursor: pointer;
 }
 
 .header--search img {
@@ -97,6 +102,7 @@ header .line {
 .header--menu img {
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 section.banner {
