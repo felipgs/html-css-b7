@@ -214,7 +214,7 @@ section.area1, .area2, .area3 {
     grid-row: 1 / 3;
 }
 
-section.area4 {
+.area4 {
     display: grid;
     grid-template-columns: 540px 1fr;
     background-color: rgb(232, 233, 238);
@@ -233,7 +233,7 @@ section.area4 {
 .area5--image1 {
     background: url(../imagens/bg4.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right bottom;
     height: 600px;
 }
 
